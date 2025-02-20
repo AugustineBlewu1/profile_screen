@@ -256,7 +256,7 @@ class _UpdateProfileState extends State<UpdateProfile> {
             }
           },
           style: TextButton.styleFrom(
-              backgroundColor: primarColor,
+              backgroundColor: buttonColor,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12))),
           child: loading
