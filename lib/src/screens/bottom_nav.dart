@@ -23,8 +23,23 @@ class _BottomNavState extends State<BottomNav> {
         currentIndex: currentItem,
         onTap: onTap,
         items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.business), label: 'Requests'),
+          BottomNavigationBarItem(
+              icon: SvgPicture.asset(
+                "assets/svg/home.svg",
+                color: neutral,
+              ),
+              label: 'Home',
+              activeIcon: SvgPicture.asset(
+                "assets/svg/home.svg",
+                color: primarColor,
+              )),
+          BottomNavigationBarItem(
+              icon: SvgPicture.asset(
+                "assets/svg/service.svg",
+                color: neutral,
+              ),
+              label: 'Requests',
+              activeIcon: SvgPicture.asset("assets/svg/service.svg")),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Account'),
         ],
       ),
